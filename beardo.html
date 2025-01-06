@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beardo Homepage Redesign</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #222;
+      padding: 10px 20px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h1 {
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: url('D:/JavaScript/Images/Beardo Head image for the banner.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin: 10px 0 20px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero button {
+      padding: 10px 20px;
+      background-color: #e63946;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background-color: #c5303a;
+    }
+
+    /* Product Section */
+    .products {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .products h2 {
+      margin-bottom: 20px;
+      font-size: 1.8rem;
+      color: #222;
+    }
+
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+
+    .product-card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 16px;
+      background: white;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.05);
+    }
+
+    .product-image {
+      width: 100%;
+      height: auto;
+      border-radius: 4px;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-size: 18px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .buy-now {
+      background-color: #e63946;
+      color: white;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .buy-now:hover {
+      background-color: #c5303a;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Beardo</h1>
+    <nav>
+      <a href="#">Products</a>
+      <a href="#">BYOB @999</a>
+      <a href="#">For Her</a>
+      <a href="#">New Launch</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to Beardo</h1>
+    <p>Top-notch grooming products for men</p>
+    <button>Shop Now</button>
+  </section>
+
+  <section class="products">
+    <h2>Top Sellers</h2>
+    <div class="product-grid">
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="D:/JavaScript/Images/Beardo 1.jpg" alt="Beardo Beard Growth Oil" class="product-image">
+        <h3>Beardo Beard Growth Oil</h3>
+        <p class="price">₹749</p>
+        <button class="buy-now">Buy Now</button>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="D:/JavaScript/Images/Beardo 2.jpg" alt="Beardo Thug Life Perfume" class="product-image">
+        <h3>Beardo Thug Life Perfume</h3>
+        <p class="price">₹999</p>
+        <button class="buy-now">Buy Now</button>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="D:/JavaScript/Images/Beardo 4.jpg" alt="Beardo Beer Shampoo" class="product-image">
+        <h3>Beardo Beer Shampoo</h3>
+        <p class="price">₹599</p>
+        <button class="buy-now">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Beardo. All rights reserved.</p>
+  </footer>
+</body>
+</html>
